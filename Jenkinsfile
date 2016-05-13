@@ -1,4 +1,4 @@
-node {
+node('ubuntu15.10') {
   stage 'build'
   docker.image('kohsuke/acmecorp-buildenv').inside {
     git 'https://github.com/kohsuke/docker-jenkins-demo-app.git'
